@@ -1,0 +1,66 @@
+*{margin: 0px; padding: 0px;}
+li{list-style: none;}
+a{ text-decoration: none;}
+.backimg{ background-image: url("../Images/login-all.gif"); background-repeat: no-repeat;}
+#top{width: 100%; height: 60px;border-bottom:1px solid  #b3b3b3; box-shadow:0 0 5px #c3c3c3; }
+#topleft{width: 200px; height: 44px; float: left;margin-top: 16px; background-position: -718px -5px;}
+#topleftL{ width: 140px; height: 44px;  float: left; display: block;cursor: pointer;}
+#topleftR{ width: 40px; height:20px; float: left;margin-left: 20px;display: block; cursor: pointer;}
+#topright{width: 290px; height: 20px;  float: right; font-size: 12px; color: #2974b6; margin-top:40px;}
+#topright a{color: #2974b6;height:20px;}
+#topright a:hover{text-decoration: underline;}
+
+.middle{width: 100%; height: 417px; position: relative;background-image: url("../Images/backImage.png");}
+.focuse{width: 656px; height: 417px; margin-left: 173px;position: relative;}
+/*#focuseImg2{ display: none;}
+#focuseImg3{ display: none;}
+#focuseImg4{ display: none;}*/
+.focuseImg{ position: absolute; left: 0px; top: 0px;}
+.focusebtn{width:150px; height: 20px; position: absolute; z-index: 20; left: 600px; bottom: -30px;}
+.focusebtnround{cursor: pointer; width:12px; height:12px;border-radius: 6px;background-color: #fff; float: left; margin-right: 20px; background-image: url("../Images/login-all.gif");background-position: -1008px -72px;}
+.focusebtnround:hover{background-position: -1033px -72px;}
+#focusebtnround1{background-position: -1033px -72px;}
+.cloud{width:620px; height:60px; background-position: -471px -454px; position: absolute;left:210px; bottom:0px; }
+.login{background-image: url("../Images/login-all.gif");background-position: -113px -140px; padding-left: 20px; width: 294px; height: 435px; background-color:#f3fcff;position: absolute;top: 20px;right:170px; border-radius: 5px;}
+.logintop{width:294px; height:50px;padding-top: 17px;}
+#logintopL{width: 21px; height: 21px; margin-right: 10px; float: left; background-image: url("../Images/pan_login_logo.png");}
+#logintopR{width: 130px; height:20px; float: left; font-weight: bold;color:#2486c4;font-size: 14px;padding-top: 5px;}
+.logininput{width: 272px; height:130px;}
+.inputext{width: 270px; height:40px; border: 1px solid #ccc;background-color: #fff;}
+#inputtext2{ border-top: 0px;}
+.inputextL{width:16px; height:17px; float: left;background-image: url("../Images/input_icon.png"); margin:10px;}
+#inputextL1{background-position: -2px 0px;}
+#inputextL2{background-position: -16px 0px;}
+.inputextR{width: 234px; height: 40px; float: left; font-size: 14px; color: #ccc; border: 0px; float:left;background-color: #fff;}
+.inputextbottom{width: 272px; height: 30px;float: left;padding-top: 10px;}
+#gougou{border: 2px solid #ddd; display: block; float: left; margin-top: 5px; cursor: pointer;}
+.inputextbottom a{ font-size: 12px; padding-left: 5px; color: #5b7e9b;}
+#inputextbottomA2{float:right; text-decoration: underline;}
+
+.button{width: 276px; height: 40px; background-color: #2592e0;border-radius: 4px;text-align: center; line-height: 40px; font-size:20px; color: #fff; font-weight: bold;font-family: 微软雅黑; cursor: pointer; transition:all 0.3s;}
+.button:hover{opacity: 0.8}
+#buttonspan{ font-size: 12px; color: #5b7e9b; display: block; padding-top: 10px;}
+.threeway{ width: 194px; height:30px;padding-top: 10px; padding-left:80px;}
+.way{width:29px; height:29px; background-image: url("../Images/third-login.gif"); float: left; margin-right:20px; cursor: pointer;}
+#way1{background-position:-2px -4px ;}
+#way1:hover{background-position:-2px -51px ;}
+#way2{background-position:-52px -4px ;}
+#way2:hover{background-position:-52px -51px ;}
+#way3{background-position:-95px -4px ; width: 50px;}
+#way3:hover{background-position:-95px -51px ;}
+#loginbottom{ height:120px; width:294px;background-position: -114 -465; margin-top: 25px; padding-top:20px; color: #5b7e9b; }
+#loginbottomspan{font-size: 12px; }
+#loginbottomsbtn{width: 175px; height:38px;display: block; margin-top: 20px; margin-left: 40px; background-image: url("../Images/login-all.gif"); background-position: -107px -63px; cursor: pointer;}
+
+.bottom{width:80%;height: 160px;  padding-top:50px; padding-left: 200px;}
+.bottomLi{ width: 140px; height: 110px; display: block; float: left; margin:1px; background-image: url("../Images/login-all.gif");cursor: pointer;}
+#lione{ background-position:-458px -170px}
+#litwo{ background-position:-594px -170px}
+#lithree{ background-position:-730px -170px}
+#lifour{ background-position:-868px -170px}
+#lifive{ background-position:-1006px -170px}
+#lisix{ background-position:-1144px -170px}
+#liseven{ background-position:-1282px -170px}
+.copyright{ margin-left: 400px; height: 60px;}
+.copyright a:hover{text-decoration: underline;}
+.copyfont{ font-size: 12px; color: #666;}
