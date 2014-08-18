@@ -2,7 +2,7 @@
 li{list-style: none;}
 
 body{background-image: url("../Images/backimage.jpg");background-repeat: no-repeat; background-size: 100% 100%;}
-
+/*个人信息*/
 .myinfo{ width: 280px; height: 75px;margin-left: 150px; margin-top: 10px;}
 .myinfotop{width: 280px; height:45px;}
 .myinfotopL{width:40px; height: 40px; float:left;background-image: url("../Images/head/mypic.jpg"); border: 3px solid #fff;box-shadow:3px 3px 6px #111;}
@@ -13,24 +13,26 @@ body{background-image: url("../Images/backimage.jpg");background-repeat: no-repe
 .myinfobottom li{ width: 16px;height: 15px; float: left;display: block; margin-right:4.5px;cursor: pointer;}
 
 
-
-
-.qqdiv{width: 280px; height:auto;min-height: 600px; margin-left: 150px;cursor: pointer; float: left;}
+/*好友列表*/
+/*好友列表 主体 */
+.qqdiv{width: 280px; height:auto;min-height:400px; margin-left: 150px;cursor: pointer; float: left;}
 .friendbody{width: 280px; height: 350px; overflow-y: scroll; overflow:auto;background: linear-gradient(#fff,#f1f1f1);}
 .BBottom{width: 280px; height:392;cursor: pointer;background: linear-gradient(#fff,#f1f1f1);}
-#qqtitle{width: 280px; height: 45px;border-top-left-radius:7px;border-top-right-radius:7px; background:linear-gradient(#555,#222);color: #fff; font-size: 20px; text-align: center;line-height:45px; }
+#qqtitle{width: 270px; height: 40px;border-top-left-radius:7px;border-top-right-radius:7px;color: #fff; font-size: 20px; text-align: center;padding-top: 5px; padding-right: 10px;}
+.titleL{ height: 40px; width:120px; float: left; padding-left:80px;}
+.titleR{ height: 20px; width: 50px; float:right; font-size:12px; border:1px solid #fff; border-radius: 4px;margin-top:5px; box-shadow: 1px 1px 1px #ccc;}
 #qqthreePartli2{border-right:  1px solid #d8d8d8; border-left:1px solid #d8d8d8;}
-.friendLi{background: linear-gradient(#fff,#f1f1f1);width:263px; height:60px;background-color: #fff;border-top: 1px solid #e3e3e3; display: block;}
+.friendLi{width:263px; height:60px;border-top: 1px solid #e3e3e3; display: block;background: linear-gradient(#f2ede3,#f1f1f1);}
 .friendLiL{ width: 40px; height: 40px;margin: 8px; float: left;}
-.friendLiR{ width:200px; height:50px; float: right;}
-.webname{ width: 200px;  font-size: 100%; padding-top:6px;padding-bottom: 4px;}
-.friendLiR span{font-size: 12px; color: #aaa;}
+.friendLiR{ width:auto; height:50px; float:left;}
+.webname{ width: 200px;  font-size: 100%; padding-top:6px;}
+.friendLiR span{font-size: 12px; color: #aaa;height: 12px;line-height: 20px;}
 .fenzu{height: 40px;background: linear-gradient(#fff,#f1f1f1); line-height: 40px;}
 .fenzuIn{height: 40px; width: 93px; float: left; text-align: center; border-bottom: 2px solid #ccc;}
-.fenzudetail{border-bottom:2px solid #0aa7ff;color:#0aa7ff;}
+.fenzudetail{border-bottom:2px solid #BA812A;color:#0aa7ff;}
 
-
-.qqbottomli{width: 68px; height:50px; border-right: 1px solid #222;border-left: 1px solid #555;background:linear-gradient(#555,#222);float: left;}
+/*好友列表底部*/
+.qqbottomli{width: 68px; height:50px; border-right: 1px solid #fff;border-left: 1px solid #555;background:linear-gradient(#555,#222);float: left;}
 .qqbottom{width: 280px; height:50px; text-align: center;}
 .qqbottomlipic{width:30px; height: 30px;background-size:100% 100%; margin-left:20px;}
 #qqbottomli1{ border-bottom-left-radius: 7px;}
@@ -40,39 +42,10 @@ body{background-image: url("../Images/backimage.jpg");background-repeat: no-repe
 #qqbottomli3pic{ background-image: url("../Images/c2.png"); }
 #qqbottomli4pic{ background-image: url("../Images/d2.png"); }
 .qqbottomspan{color: #ccc; font-size: 12px;}
-.qqbottomclick{box-shadow: inset 0 0 10px #111;background: #333;}
-
-.friendlistkind{width: 233px; height: 40px;background: linear-gradient(#fff,#f1f1f1);padding-left: 10px; padding-right: 20px; }
-.friendlistkindL{width:15px; height:15px; background-image: url("backImages/1.png"); background-size: 15px 15px;float: left; margin-top: 10px;}
-.friendlistkindR{height:35px;background-size: 15px 15px; float:left; line-height:35px; float: left;}
-.onlinenumber{ font-size: 12px; color: #aaa; display: block;float:right; margin-top:10px;}
-.friendlist{display:none;transition:all 0.3s;}
-#friendlist1{display: block;}
-
-.qqwindow{ width: 700px; height:auto; position: absolute;top: 100px;}
-.windowtop{ padding-top:5px;height: 40px; background:linear-gradient(#555,#222);border-top-left-radius: 7px;border-top-right-radius: 7px; padding-left: 15px;padding-right: 15px;}
-.windowbody{width: 699px;height:400px; background-color:#cde0ef; overflow-y:scroll;overflow-x:auto; border-left:1px solid #fff;}
-.windowbottom{ height:42px;background:linear-gradient(#555,#222);border-bottom-left-radius: 7px;padding-top: 7px; border-bottom-right-radius: 7px; padding-left: 10px; padding-right: 10px;}
-.windowbottomtext{ border: 0px; height: 32px; width: 570px;background-color: #fff; border-radius: 5px; float: left;}
-.windowbiaoqing{ width: 32px; height:32px; float:left; background-image: url("backImages/2.png"); background-size: 100% 100%;margin-right:15px;}
-.windowbottombtn{cursor: pointer;  width: 50px; height: 32px; border-radius: 4px; background:-webkit-linear-gradient(top,#5f9cc5,#396b9e); float: right;font-size: 14px; color: #fff; line-height: 30px; text-align: center;text-shadow: 0 1px 1px #194b7e;}
-.windowtopname{ width: 450px;height: 30px; line-height:30px; text-align: center; color: #fff; font-size: 17px; float: left;}
-.windowLbtn{ width: 40px; height: 30px;  border: 1px solid ;border-color: #2c2727 #2c2727 #1a1919; float: left; border-radius: 5px; padding-left: 25px;}
-.windowLbtnpic{ height: 15px; width: 15px; display: block; background-image: url("backImages/3.png"); background-size: 100% 100%; margin-top: 7px;}
-.windowclosebtn{ width: 60px; height: 30px;  border: 1px solid ;border-color: #2c2727 #2c2727 #1a1919; float: right; border-radius: 5px; float: right; color: #fff;text-align: center;line-height:30px; cursor: pointer;}
-.zuixiaohua{margin-right: 10px;}
-.GotmessageAll{width: 600px;height: 70px;padding: 10px; float: right; margin-top: 20px;}
-.GotmessageAllL{width: 550px;height: 70px;float: left;}
-.gotmessage{width: auto; height: 20px;margin-top: 5px; background-color: #fff;border-radius: 5px; box-shadow: 3px 3px 10px #000; padding: 10px; float: right;}
-.sentname{ float: right; font-size: 14px; height: 20px; width: 600px; text-align: right; text-shadow: 1px 1px 1px #fff;}
-.GotmessageAllR{width: 40px;height: 40px; float: right; background-image:url("../Images/head/mypic.jpg");}
-
-
-
 #taolunzu{display: none;}
 #qunzu{display: none;}
-
-/*#huihua{display: none;}*/
+/*.jiluspan{outline:  none; border: none;}*/
+#huihua{overflow: scroll;}
 /*#lianxiren{display: none;}*/
 /*#faxian{display: none;}
 #shezhi{display: none;}*/
@@ -80,7 +53,41 @@ body{background-image: url("../Images/backimage.jpg");background-repeat: no-repe
 #BBottom2{display: block;}
 .BBottomLI{background: linear-gradient(#fff,#f1f1f1);width:263px; height:60px;background-color: #fff;border-top: 1px solid #e3e3e3; display: block;}
 
-.bodyA{ width:1300px; height: 650px; float: left; position: relative;}
-.bodyAR{ width:850px; height:600px; position: absolute;top: 10px;left:440px;/* background-color: #ccc;*/}
-.minimenu{width: 850px; height: 25px;}
-.miniwin{ width: 80px; height: 25px;  border-radius: 3px; box-shadow: 2px 2px 5px #fff;margin-right: 10px; float: left;font-size:13px; text-align: center;line-height: 25px;color:000; cursor: pointer;text-shadow:2px 2px 2px #fff;}
+/*好友列表组别*/
+.friendlistkind{width: 233px; height: 40px;background: linear-gradient(#fff,#f1f1f1);padding-left: 10px; padding-right: 20px; }
+.friendlistkindL{width:15px; height:15px; background-image: url("backImages/1.png"); background-size: 15px 15px;float: left; margin-top: 10px;}
+.friendlistkindR{height:35px;background-size: 15px 15px; float:left; line-height:35px; float: left;}
+.onlinenumber{ font-size: 12px; color: #aaa; display: block;float:right; margin-top:10px;}
+.friendlist{display:none;transition:all 0.3s;}
+#friendlist1{display: block;}
+
+/*聊天窗体*/
+.qqwindow{ width: 700px; height:auto; position: absolute;top: 100px;margin-left:450px;}
+.windowtop{ padding-top:5px;height: 40px;border-top-left-radius: 7px;border-top-right-radius: 7px; padding-left: 15px;padding-right: 15px;}
+.windowbody{width: 699px;height:400px; background-color:#cde0ef; overflow-y:scroll;overflow-x:auto; border-left:1px solid #fff;scrollbar-track-color:red;}
+.windowbottom{ height:42px;background:linear-gradient(#555,#222);border-bottom-left-radius: 7px;padding-top: 7px; border-bottom-right-radius: 7px; padding-left: 10px; padding-right: 10px;}
+.windowbottomtext{ border: 0px; height: 32px; width: 570px;background-color: #fff; border-radius: 5px; float: left;}
+.windowbiaoqing{ width: 32px; height:32px; float:left; background-image: url("backImages/2.png"); background-size: 100% 100%;margin-right:15px;}
+.windowbottombtn{cursor: pointer;  width: 50px; height: 32px; border-radius: 4px; float: right;font-size: 14px; color: #fff; line-height: 30px; text-align: center;text-shadow: 0 1px 1px #194b7e;}
+.windowtopname{ width: 450px;height: 30px; line-height:30px; text-align: center; color: #fff; font-size: 17px; float: left; border-bottom: 1px solid #fff; margin-left: 5px;}
+.windowLbtn{ width: 40px; height: 30px;  border: 1px solid ; float: left; border-radius: 5px; padding-left: 25px;}
+.windowLbtnpic{ height: 15px; width: 15px; display: block; background-image: url("backImages/3.png"); background-size: 100% 100%; margin-top: 7px;}
+.windowclosebtn{ width: 60px; height: 30px;float: right; border-radius: 5px; float: right; color: #fff;text-align: center;line-height:30px; cursor: pointer;}
+.zuixiaohua{margin-right: 10px;}
+.GotmessageAll{width: 600px;height: 70px;padding: 10px; float: right; margin-top: 20px;}
+.GotmessageAllL{width: 550px;height: 70px;float: left;}
+.gotmessage{width: auto; height: 20px;margin-top: 5px; background-color: #fff;border-radius: 5px; box-shadow: 3px 3px 10px #000; padding: 10px; float: right;}
+.sentname{ float: right; font-size: 14px; height: 20px; width: 600px; text-align: right; text-shadow: 1px 1px 1px #fff;}
+.GotmessageAllR{width: 40px;height: 40px; float: right; background-image:url("../Images/head/mypic.jpg");}
+
+.bodyA{ width:1340px; height: 650px; float: left; position: relative;}
+.bodyAR{ width:850px; height:40px; position: absolute;top: 10px;left:440px;/* background-color: #ccc;*/}
+/*最小化*/
+.minimenu{width: 850px; height:70px;}
+.miniwin{margin-bottom: 10px; background-color:#B16F18; width: 80px; height: 25px;  border-radius: 3px; box-shadow: 2px 2px 5px #ccc;margin-right: 10px; float: left;font-size:13px; text-align: center;line-height: 25px;color:000; cursor: pointer;text-shadow:2px 2px 2px #fff;}
+
+/*界面颜色控制区*/
+.Backcolorclass{background:linear-gradient(#ca9b20,#d1830c);}
+.qqbottomclick{box-shadow: inset 0 0 10px #f4e2bf;}
+.btnstyle{border:1px solid; border-color:#fff;}
+.btnstyle:hover{box-shadow: 2px 1px 1px #ccc; background-color:#ca9b20;}

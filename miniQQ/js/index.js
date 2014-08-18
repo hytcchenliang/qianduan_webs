@@ -1,9 +1,14 @@
 $(function(){
+	$(".friendli").attr("huihuashow","false");
 	/*好友列表上不三个按钮*/ 
-	$(".qqdiv").draggable({ containment: "parent" });
+	// $(".qqdiv").draggable({ containment: "parent" });
 	$(".fenzuIn").click(function(){
 		$(".fenzuIn").removeClass("fenzudetail");
 		$(this).addClass("fenzudetail");
+	});
+	$(document).on("click",".friendli",function(){
+		chatjilu($(this));
+		showChatFrm($(this));
 	});
 /*好友列表底部按钮*/ 
 	$(".qqbottomli").click(function(){
@@ -36,32 +41,22 @@ $(function(){
 
 	});
 	/*好友分组*/ 
-var listkindnumber1=2;
-	$(".list1").click(function(){
-
+// var listkindnumber1=2;
+	$(".friendlistkind").attr("haveopen","false");
+	$(".list1").attr("haveopen","true");
+	$(".friendlistkind").click(function(){
+		
 		var d=$(this).attr("kid");
-		if(listkindnumber1==1){
+		if($(this).attr("haveopen")=="false"){
 			$(".friendlist[lid="+d+"]").show();
-			listkindnumber1=2;
+			$(this).attr("haveopen","true");
 							}
 			else{
 				$(".friendlist[lid="+d+"]").hide();
-				listkindnumber1=1;
+				$(this).attr("haveopen","false");
 			}
 	});
-	var listkindnumber2=1;
-	$(".list2").click(function(){
 
-		var d=$(this).attr("kid");
-		if(listkindnumber2==1){
-			$(".friendlist[lid="+d+"]").show();
-			listkindnumber2=2;
-							}
-			else{
-				$(".friendlist[lid="+d+"]").hide();
-				listkindnumber2=1;
-			}
-	});
 	// 好友列表上部三个分组
 	$(".fenzuIn").click(function(){
 		var f=$(this).attr("FIid");
@@ -74,55 +69,12 @@ var listkindnumber1=2;
 	 	$(".BBottom[BID="+f+"]").show();
 	 	$(".BBottom[BID!="+f+"]").hide();
 	 });
+	 // $(".titleR").click(function(){
+		// $(".Backcolorclass").css("background","linear-gradient(#fff,#d1830c)");
+	 // });
 	/*点击好友出现聊天窗体*/ 
-	$(".friendli").click(function(){
-		var FId=$(this).attr("fid");//好友ID
-		$(".miniwin[miniId="+FId+"]").fadeOut();
-		$(".qqwindow[WID="+FId+"]").remove();
-		$(this).attr("isopen","false");
-		//先把窗体至于最上层再return结束执行语句
-		$(".qqwindow[WID="+FId+"]").css("z-index","104");
-	    $(".qqwindow[WID!="+FId+"]").css("z-index","100");
-		if($(this).attr("isopen")=="true"){
-			return;
-		}
+	$(".friendli").attr("isshow","false");
 
-		var UserName=$(this).attr("username");//好友昵称
-		$(this).attr("isopen","true");
-		var winID="Wid"+FId;
-		var html="";
-		html+='				<div WID='+FId+' class="qqwindow" id="'+winID+'">';//此次弹出窗体Id等于点击的好友ID
-		html+='					<div class="windowtop">';
-		html+='						<div class="windowLbtn">';
-		html+='							<span class="windowLbtnpic"></span>';
-		html+='						</div>';
-		html+='						<div class="windowtopname">'+UserName+'</div>';//此次弹出窗体顶部名称就是好友昵称
-		html+='						<div closeId='+FId+' class="windowclosebtn">关闭</div>';//关闭按钮的ID等于聊天桌面的ID
-		html+='						<div Zid='+FId+' class="windowclosebtn zuixiaohua">最小化</div>';
-		html+='					</div>';
-		html+='					<div class="windowbody" bid='+FId+'></div>';//窗体聊天桌面的ID等于窗体ID
-		html+='					<div class="windowbottom">';
-		html+='						<div class="windowbiaoqing"></div>';
-		html+='						<input class="windowbottomtext" tid='+FId+'></input>';//输入文本的ID等于聊天桌面的ID
-		html+='						<div class="windowbottombtn" BtnId='+FId+'>发送</div>';//发送按钮的ID等于聊天桌面的ID
-		html+='					</div>';
-		html+='				</div>';
-		$(".bodyAR").append(html);
-		$(".qqwindow[WID="+FId+"]").css("z-index","104");//将本次点击弹出的窗体至于最上层
-	    $(".qqwindow[WID!="+FId+"]").css("z-index","100");
-	    $( ".qqwindow").draggable({ containment: "parent" });
-		var topsize=(FId%10)*50+50;
-		var leftsize=(FId%10)*10+10;
-		$("#"+winID).css("top",topsize+"px");
-		$("#"+winID).css("left",leftsize+"px");
-		$(".windowclosebtn").click(function(){
-			
-			var CloseID=$(this).attr("closeId");//取出关闭按钮的Id
-			$(".friendli").attr("isopen","false");
-			$(".qqwindow[WID="+CloseID+"]").remove();//聊天窗体的Id等于关闭按钮的关闭
-		});
-
-	});
 	$(document).on("click",".windowbottombtn",function(){
 		sendMessage($(this));
 	});
@@ -133,14 +85,64 @@ var listkindnumber1=2;
 
 	$(document).on("click",".zuixiaohua",function(){
 		zuixiao($(this));
+		return false;
 	});
 	$(document).on("click",".miniwin",function(){
 		normalsize($(this));
 
 	});
+	$(document).on("click",".windowclosebtn",function(){
+		closewin($(this));
+	});
+	
 });
+function showChatFrm(ele){
+	var FId = ele.attr("fid");//好友ID
+		$(".miniwin[miniId="+FId+"]").remove();
+		//先把窗体至于最上层再return结束执行语句
+		$(".qqwindow[WID="+FId+"]").css("z-index","104");
+	    $(".qqwindow[WID!="+FId+"]").css("z-index","100");
+		var UserName = ele.attr("username");//好友昵称
+		
+		var winID="Wid"+FId;
+		var html="";
+		html+='				<div WID='+FId+' class="qqwindow" id="'+winID+'">';//此次弹出窗体Id等于点击的好友ID
+		html+='					<div class="windowtop Backcolorclass">';
+		html+='						<div class="windowLbtn btnstyle">';
+		html+='							<span class="windowLbtnpic"></span>';
+		html+='						</div>';
+		html+='						<div class="windowtopname">'+UserName+'</div>';//此次弹出窗体顶部名称就是好友昵称
+		html+='						<div closeId='+FId+' class="windowclosebtn btnstyle">关闭</div>';//关闭按钮的ID等于聊天桌面的ID
+		html+='						<div Zid='+FId+' class="windowclosebtn zuixiaohua btnstyle">最小化</div>';
+		html+='					</div>';
+		html+='					<div class="windowbody" bid='+FId+'></div>';//窗体聊天桌面的ID等于窗体ID
+		html+='					<div class="windowbottom Backcolorclass">';
+		html+='						<div class="windowbiaoqing"></div>';
+		html+='						<input class="windowbottomtext" tid='+FId+'></input>';//输入文本的ID等于聊天桌面的ID
+		html+='						<div class="windowbottombtn btnborcolor btnstyle" BtnId='+FId+'>发送</div>';//发送按钮的ID等于聊天桌面的ID
+		html+='					</div>';
+		html+='				</div>';
+		if(ele.attr("isshow")=="false"){
+			$(".bodyA").append(html);
+			ele.attr("isshow","true");
+		}
+		else{
+			$(".qqwindow[WID="+FId+"]").show();
+		}
+		
+		$(".qqwindow[WID="+FId+"]").css("z-index","104");//将本次点击弹出的窗体至于最上层
+	    $(".qqwindow[WID!="+FId+"]").css("z-index","100");
+	   
+		var topsize=(FId%4)*50+20;
+		var leftsize=(FId%10)*10+10;
+		$("#"+winID).css("top",topsize+"px");
+		$("#"+winID).css("left",leftsize+"px");
+		$( ".qqwindow" ).draggable({containment:"parent"});
+		$(".qqwindow").draggable({ handle:".windowtopname"});
 
-
+}
+ // $(".qqwindow").draggable({ cancel: "windowclosebtn" });
+var lastmessage="";
 function sendMessage(ele){
 	var btnId=ele.attr("BtnId");//取出本次点击的发送按钮的Id
 	var message=$(".windowbottomtext[tid="+btnId+"]").val();//取出id等于发送按钮Id输入文本的文本
@@ -153,8 +155,10 @@ function sendMessage(ele){
 	html+='							<div class="GotmessageAllR">';
 	html+='							</div>';
 	html+='						</div>';
-
+	lastmessage=$(".windowbottomtext[tid="+btnId+"]").val();
+	$(".jiluspan[jiluspanid="+btnId+"]").html(lastmessage);
 	$(".windowbody[bid="+btnId+"]").append(html);//id等于发送按钮Id的聊天桌面添加聊天记录
+	$(".windowbottomtext[tid="+btnId+"]").val("");
 }
 
 function maxindex(ele){
@@ -165,16 +169,54 @@ function maxindex(ele){
 
 function zuixiao(ele){
 	var z=$(ele).attr("Zid");
-	$(".friendli[fid="+z+"]").attr("isopen","true");
 	$(".qqwindow[WID="+z+"]").fadeOut();
 	var html="";
 	var name=$(".friendli[fid="+z+"]").attr("username");
-	html+='<div class="miniwin" miniId='+z+' miniisopen="1">'+name+'</div>';
+	html+='<li class="miniwin" miniId='+z+' miniisopen="1">'+name+'</li>';
 	$(".minimenu").append(html);
+
+	$( ".minimenu" ).sortable({
+      revert: true
+    });
+    $( "ul,li" ).disableSelection();
 }
 
 function normalsize(ele){
 	var z=$(ele).attr("miniId");
 	$(".qqwindow[WID="+z+"]").fadeIn();
 	$(ele).hide();
+}
+
+function closewin(ele){
+	var CloseID=$(ele).attr("closeId");//取出关闭按钮的Id	
+	$(".qqwindow[WID="+CloseID+"]").hide();//聊天窗体的Id等于关闭按钮的关闭
+}
+
+function chatjilu(ele){
+	var tmp = $(ele).attr("huihuashow");
+	var UserName=$(ele).attr("username");
+	var FId=$(ele).attr("fid");//好友ID
+	var html="";
+	html+='						<li class="huihuafriendli friendli " fid='+FId+' username='+UserName+'>';
+	html+='							<div class="friendLiL">';
+	html+='								<a><img src="Images/head/1.jpg"> </a>';
+	html+='							</div>';
+	html+='							<div class="friendLiR">';
+	html+='								<div class="webname">';
+	html+='									'+UserName+'';
+	html+='									<span>(fisher)</span>';
+	html+='								</div>';
+	html+='								<div class="shuoshuo">';
+	html+='									<span class="jiluspan" jiluspanid='+FId+'>[在线]</span>';
+	html+='								</div>';
+	html+='							</div>';
+	html+='						</li>';
+
+	if($(ele).attr("huihuashow")=="false"){
+		$("#huihua").append(html);
+		$(ele).attr("huihuashow","true");
+	}
+	else{
+		$(".qqwindow[WID="+FId+"]").show();
+	}
 }
