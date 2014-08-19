@@ -17,19 +17,91 @@ $(function(){
 		$(this).css("font-weight","bold");
 	});
 
-	var number=1;
+	var number1=1;
 	$(".mainBoLLielse").click(function(){
-		if(number==1){
+		if(number1==1){
 			$(".elsejian").css("transform","rotate(90deg)");
 			$(".elseLi").slideDown();
-			number=2;
+			number1=2;
 
 		}
 		else
 		{
 			$(".elsejian").css("transform","rotate(0deg)");
 			$(".elseLi").slideUp()
-			number=1;
+			number1=1;
 		}
 	});
+
+	
+	var number2=1;
+	$(".Rtopbtnpan1").click(function(){
+		if(number2==1){
+			$(this).css("background-image",'url("Images/gouxuan.png")');
+			$(".mailLispan").css("background-image",'url("Images/gouxuan.png")');
+			$(".mailLispan").attr("spanchoose","true");	
+		 	number2=2;
+		}
+		else{
+			$(this).css("background-image",'url("Images/weigou.png")');
+			$(".mailLispan").css("background-image",'url("Images/weigou.png")');
+			$(".mailLispan").attr("spanchoose","false");
+			number2=1;
+		}
+	});
+
+	$(".mailLispan").attr("spanchoose","false");
+	$(".mailLispan").click(function(){
+		if($(this).attr("spanchoose")=="false"){
+			$(this).css("background-image",'url("Images/gouxuan.png")');
+			$(this).parent().css("background-color","#ffffd5");
+			$(this).attr("spanchoose","true");
+		}
+		else{
+			$(this).css("background-image",'url("Images/weigou.png")');
+			$(this).parent().css("background-color","");
+			$(this).attr("spanchoose","false");
+		}
+	});
+
+	$(".topbutton").attr("btnopen","false");
+	$(".topbutton").click(function(){
+		var bid=$(this).attr("btnid");
+		if($(this).attr("btnopen")=="false"){
+			$(".buttonul[ulid!="+bid+"]").css("display","none");
+			$(".buttonul[ulid="+bid+"]").css("display","block");
+			$(this).attr("btnopen","true");
+		}
+		else{
+			$(".buttonul[ulid="+bid+"]").css("display","none");
+			$(this).attr("btnopen","false");
+		}
+		return false;
+	});
+	$("body").click(function(){
+		$(".buttonul").css("display","none");
+	});
+
+  //删除邮件
+	$(".righttopbtn2").click(function(){
+		$(".mailLispan[spanchoose="+true+"]").parent().remove();
+	});
+ 	
+ 	$(".notread").click(function(){
+ 		$(".mailLispan[spanchoose="+true+"]").next().css("background-image",'url("Images/weidu.png")');
+ 	});
+
+ 	$(".haveread").click(function(){
+ 		$(".mailLispan[spanchoose="+true+"]").next().css("background-image","");
+ 	});
+
+ 	$(".mailhongqi").click(function(){
+ 		$(".mailLispan[spanchoose="+true+"]").parent().find(".mailflag").css("background-image",' url("Images/redflag.png")');
+ 		$(".mailLispan[spanchoose="+true+"]").parent().find(".mailfrom").css("color","#f00");
+ 		$(".mailLispan[spanchoose="+true+"]").parent().find(".mailtitle").css("color","#f00");
+
+ 	});
+
+
+
 })
