@@ -1,4 +1,29 @@
 $(function(){
+	$(".inputextR1").focus(function(){
+		if($(this).val()=="手机/邮箱/用户名"){
+			$(this).val("");
+			$(this).css("color","#000");
+		}
+	});
+	$(".inputextR1").blur(function(){
+		if($(this).val()==""){
+			$(this).val("手机/邮箱/用户名");
+			$(this).css("color","");
+		}
+	});
+	$(".inputextR2").focus(function(){
+		if($(this).val()=="密码"){
+			$(this).val("");
+			$(this).css("color","#000");
+		}
+	});
+	$(".inputextR2").blur(function(){
+		if($(this).val()==""){
+			$(this).val("密码");
+			$(this).css("color","");
+		}
+	});
+
 
 	timer=setInterval("focuse()",2000);
 
@@ -14,6 +39,19 @@ $(function(){
 	$(".focusebtnround").click(function(){
 		number=$(this).attr("rid");
 		focuse();
+	});
+
+
+	$(".button").click(function(){
+		if($(".inputextR1").val()=="手机/邮箱/用户名"){
+			$(".wrong").html("请您填写手机/邮箱/用户名");
+		}
+		else{
+			if($(".inputextR2").val()=="密码"){
+			$(".wrong").html("请您填写密码！");
+			}
+		}	
+		
 	});
 });
 var timer;

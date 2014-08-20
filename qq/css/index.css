@@ -42,7 +42,7 @@ ul,li{ list-style: none; list-style-position: outside; }
 #sosotext{ width:392px; height:30px; border:2px solid #ccc; float:right; float:left; border-right: 0px;}
 #sosopic{ height: 14px; margin-top:7px; display: block; float: right;padding-right: 10px;}
 #sosobtn{display: block; height: 34px;width:86px;display: block; float: right;background-image:url("BacImages/qqbg_1.5.5.png");background-position: -350px -110px; }
-#sososhuru{ width:200px; margin-top:7px; float:left; border: 0px;}
+#sososhuru{ width:200px; margin-top:7px; float:left; border: 0px;outline: none;}
 
 #sosomenu{display: none; width:60px; height:226px; border: 1px solid #ccc; position: absolute; background-color:#FFF; margin-top:32px; margin-right:2px; border: 2px solid #ccc; border-top: 0px;}
 #sosomenu li{ width:60px; height:28px; line-height: 28px; cursor: pointer;color:rgb(168,168,168); font-weight: bold;}
@@ -160,7 +160,7 @@ ul,li{ list-style: none; list-style-position: outside; }
 #youtitle{ float: right; width: 80px; height: 25px; line-height: 25px; color: rgb(69, 143, 206);}
 #zuotitle{ float: right;width:140px; height: 25px; margin-top: 3px;}
 #zuotitle a{ float:left; height: 25px;height:20px;}
-#lm2Text{ width: 100px; float: left;height:20px;color:rgb(180, 179, 179);}
+#lm2Text{ width: 100px; float: left;height:20px;color:rgb(180, 179, 179); outline: none;}
 #zuo{width: 130px; float:right;}
 #lm2Button{width: 33px; display: block;float: right; background-image:url("BacImages/qqbg_1.5.5.png"); background-position: -600px -160px; }
 

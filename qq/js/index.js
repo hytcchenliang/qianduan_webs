@@ -1,5 +1,17 @@
 $(function(){
 
+	$("#sososhuru").focus(function(){
+		$(this).val("");
+	});
+	$("#sososhuru").blur(function(){
+		$(this).val("QQ");
+	});
+	$("#lm2Text").focus(function(){
+		$(this).val("");
+	});
+	$("#lm2Text").blur(function(){
+		$(this).val("代码/名称/拼音");
+	});
 	/*soso下拉菜单begin*/ 
 	$("#sosoleftDiv").mouseover(function(){
 		 $("#sosomenu").css("display","block");
@@ -22,6 +34,7 @@ $(function(){
 		$(this).css("backgroundColor","");
 		$("#sosoleftDiv").css("background-position", "-877px -200px");
 	});	
+
 
 	/*soso下拉菜单end*/ 
 

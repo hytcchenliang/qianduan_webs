@@ -15,6 +15,7 @@ $(function(){
 		$(this).css("border-color","#16659e");
 		$(this).css("color","#fff");
 		$(this).css("font-weight","bold");
+		$(".xiexinpic").css("background-position","");
 	});
 
 	var number1=1;
@@ -102,6 +103,65 @@ $(function(){
 
  	});
 
+ 	$(".xiexin").click(function(){
+ 		$(".xiexinpic").css("background-position","-286px -380px");
+ 	});
+
+ 	$(".shoujianinput").focus(function(){
+ 		$(this).val("");
+ 		$(this).css("color","#000");
+ 		$(this).parent().css("border-bottom-color","#0F6099");
+ 	});
+ 	$(".shoujianinput").blur(function(){
+ 		$(this).val("输入对方手机号，就能给他发邮件");
+ 		$(this).css("color","#ccc");
+ 		$(this).parent().css("border-bottom-color","");
+ 	});
+ 	$(".shoujianinput1").focus(function(){
+ 		$(this).parent().css("border-bottom-color","#0F6099");
+ 	});
+ 	$(".shoujianinput1").blur(function(){
+ 		$(this).parent().css("border-bottom-color","");
+ 	});
+
+ 	$(".nameandusername").hover(function(){
+ 		$(".sentrenname").css("color","#fff");
+ 		$(".sentrenusername").css("color","#fff");
+ 	},function(){
+ 		$(".sentrenname").css("color","");
+ 		$(".sentrenusername").css("color","");
+ 	});
+
+ 	$(".sosoinput").focus(function(){
+ 		$(this).val("");
+ 	});
+ 	$(".sosoinput").blur(function(){
+ 		$(this).val("查找联系人");
+ 	});
+
+ 	 $(".searchall").attr("haveclick","yes");
+ 	$(".searchall").click(function(){
+ 		if($(this).attr("haveclick")==="yes"){
+ 			$(".allspan").css("background-position","0px -250px")
+ 			$(this).attr("haveclick","no");
+ 		}
+ 		else{
+ 			$(".allspan").css("background-position","-60px -250px")
+ 			$(this).attr("haveclick","yes");
+ 		}
+ 	});
+
+ 	$(".topmenuLi").click(function(){
+ 		var ID=$(this).attr("titleid");
+ 		$(".mainbody[contentid!="+ID+"]").css("display","none");
+ 		$(".mainbody[contentid="+ID+"]").css("display","block");
+ 	});
+ 	$(".mailLi").mouseover(function(){
+ 		$(this).find(".biaoqian").css("display","block");
+ 	});
+ 	$(".mailLi").mouseleave(function(){
+ 		$(this).find(".biaoqian").css("display","none");
+ 	});
 
 
 })

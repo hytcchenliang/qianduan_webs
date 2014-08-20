@@ -22,7 +22,7 @@ a{ text-decoration: none;}
 #focusebtnround1{background-position: -1033px -72px;}
 .cloud{width:620px; height:60px; background-position: -471px -454px; position: absolute;left:210px; bottom:0px; }
 .login{background-image: url("../Images/login-all.gif");background-position: -113px -140px; padding-left: 20px; width: 294px; height: 435px; background-color:#f3fcff;position: absolute;top: 20px;right:170px; border-radius: 5px;}
-.logintop{width:294px; height:50px;padding-top: 17px;}
+.logintop{width:294px; height:57px;padding-top:10px;}
 #logintopL{width: 21px; height: 21px; margin-right: 10px; float: left; background-image: url("../Images/pan_login_logo.png");}
 #logintopR{width: 130px; height:20px; float: left; font-weight: bold;color:#2486c4;font-size: 14px;padding-top: 5px;}
 .logininput{width: 272px; height:130px;}
@@ -31,7 +31,7 @@ a{ text-decoration: none;}
 .inputextL{width:16px; height:17px; float: left;background-image: url("../Images/input_icon.png"); margin:10px;}
 #inputextL1{background-position: -2px 0px;}
 #inputextL2{background-position: -16px 0px;}
-.inputextR{width: 234px; height: 40px; float: left; font-size: 14px; color: #ccc; border: 0px; float:left;background-color: #fff;}
+.inputextR{width: 234px; height: 40px; float: left; font-size: 14px; color: #ccc; border: 0px; float:left;background-color: #fff; outline: none;}
 .inputextbottom{width: 272px; height: 30px;float: left;padding-top: 10px;}
 #gougou{border: 2px solid #ddd; display: block; float: left; margin-top: 5px; cursor: pointer;}
 .inputextbottom a{ font-size: 12px; padding-left: 5px; color: #5b7e9b;}
@@ -64,3 +64,4 @@ a{ text-decoration: none;}
 .copyright{ margin-left: 400px; height: 60px;}
 .copyright a:hover{text-decoration: underline;}
 .copyfont{ font-size: 12px; color: #666;}
+.wrong{display: block; float: left; color: #F10000; font-size: 12px;}
