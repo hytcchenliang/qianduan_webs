@@ -26,7 +26,7 @@ body{background-image: url("../Images/body_bg.jpg");background-position: center 
 .mainbodyInL{ width:150px;height:1000px;background-color:#d3ffa1; float: left;}
 .mainbodyInR{ width:804px;height:auto;float: left; padding-left: 20px;}
 .mainbodyInR1{ width: 570px; height:auto;min-height:1000px; float: left;}
-.mainbodyInR2{ width: 230px; height:auto; min-height:1000px; float: right; background-color: red;}
+.mainbodyInR2{ width: 230px; height:auto; min-height:1000px; float: right;}
 .mainbodyInRtop{width:575px;height: 30px;padding-top:30px;}
 .mainbodyInRtopL{width: 207px;height:24px; background-image: url("../Images/all_iconbtn.png"); float: left;  }
 .mainbodyInRtopR{ width: 300px;height: 22px; font-size: 12px; color: #67aa0f; float: left; line-height: 22px; }
@@ -89,23 +89,24 @@ body{background-image: url("../Images/body_bg.jpg");background-position: center 
 
 
 .weibomain{width:560px;height:auto; min-height:500px;}
-.tiezi{width:560px; height:auto; min-height:200px;border-bottom: 1px solid #ccc; margin-top: 20px;display: inline-block; padding-bottom:10px;}
-.tieziL{width:60px;height: auto; min-height: 200px; float: left;}
+.tiezi{width:560px; height:auto; min-height:100px;border-bottom: 1px solid #ccc; margin-top: 20px;display: inline-block; padding-bottom:10px;}
+.tieziL{width:60px;height: auto; min-height: 100px; float: left;}
 .headpic{width:50px; height: 50px; border: 1px solid #ccc; background-image: url("../Images/headpic/1.jpg");}
-.tieziR{width:490px;height: auto; min-height: 200px; border: 1px solid #ccc; float: left;}
+.tieziR{width:490px;height: auto; min-height:100px; border: 1px solid #ccc; float: left;}
 .webname{width: 490px; height: 40px;font-size: 15px; font-weight: bold;line-height: 40px;}
-.tiecontent{width:490px; height: auto;min-height: 200px;}
-.tiecontenttxt{width: 490px; height: auto; min-height: 50px; font-size: 15px; line-height: 20px; font-family: 微软雅黑;}
-.tiecontentpic{width: 490px; height: auto; min-height: 50px; font-size: 14px;}
+.tiecontent{width:490px; height: auto;min-height: 100px;}
+.tiecontenttxt{width: 490px; height: auto; min-height: 20px; font-size: 15px; line-height: 20px; font-family: 微软雅黑;}
+.tiecontentpic{width: 490px; height: auto; min-height: 10px; font-size: 14px;}
 .tiebottom{ width:490px; height:30px;padding-top: 10px;}
 .tiebottom a{font-size: 12px; color: #67aa0f; text-decoration: none;}
 .tiebottom a:hover{text-decoration: underline;}
 .tiebottom span{font-size: 12px; color: #aaa;}
 .tiebottomL{float: left;}
 .tiebottomR{float: right;}
+.tiebottomR a{cursor: pointer;}
 .zan{height:20px;display: inline-block;}
 .zanpic{width: 14px; height:13px; display: inline-block; background-image: url("../Images/icon.png");background-position:-73px 0px;}
-.pinglun{width:450px; display:inline-block; ;min-height: 40px;}
+.pinglun{width:450px; display:inline-block; ;min-height: 40px; display: none;}
 .pingluntext{width: 450px; height: auto; min-height:30px; margin-left: 20px;}
 .pinglunbtn{width: 60px; height:28px; border:1px solid  #ffb33b; margin-top: 5px; float: right;}
 .pinglunbtnIn{width: 58px; height:26px; background-color:#ffa00a; margin: 1px; color: #fff; font-size: 14px; text-align: center;line-height: 26px;cursor: pointer; }
@@ -121,7 +122,51 @@ body{background-image: url("../Images/body_bg.jpg");background-position: center 
 .pingbottom a{font-size: 12px; color: #67aa0f; text-decoration: none;}
 .pingbottom a:hover{text-decoration: underline;}
 .pingbottom span{font-size: 12px; color: #aaa;}
-.pinglunson{width:430px; display:inline-block; ;min-height: 40px;}
+.pinglunson{width:430px; display:inline-block; ;min-height: 40px; display: none;}
 .pingluntextson{width:400px; height: auto; min-height:30px; margin-left: 20px;}
 .pinglunbtnson{width: 60px; height:28px; border:1px solid  #ffb33b; margin-top: 5px; float: right;margin-right: 20px;}
 .pinglunbtnInson{width: 58px; height:26px; background-color:#ffa00a; margin: 1px; color: #fff; font-size: 14px; text-align: center;line-height: 26px;cursor: pointer; }
+
+/*左菜单开始*/
+.mainbodyInLul{ width: 150px; height: auto; min-height:35px; padding-top: 10px; padding-bottom: 10px; border-bottom: 1px solid #d9d9d9;}
+.mainbodyInLulli{width: 150px;height: 35px; cursor: pointer;}
+.mainbodyInLulli:hover{background-color:#b4d491;}
+.Llipic{width: 20px; height: 20px; display: block; margin-top: 6px; float: left; margin-left: 20px;}
+.Llitext{text-align: center; line-height: 35px; width: 110px; height: 35px;display: block;}
+.playweibopic{ background-image:url("../Images/icon1.png");background-position:-0 -223px;}
+.shouye{background-image:url("../Images/icon1.png");background-position:-0 -23px;}
+.xiaoxi{background-image:url("../Images/icon.png");background-position:-0 -23px;}
+.shoucang{background-image:url("../Images/icon1.png");background-position:-0 -123px;}
+.fageiwopic{background-image:url("../Images/icon.png");background-position:-0 -73px;}
+.haoyoupic{background-image:url("../Images/icon.png");background-position:-0 -99px;}
+.tiebiepic{background-image:url("../Images/icon.png");background-position:-0 -323px;}
+.shipinyinpic{background-image:url("../Images/icon.png");background-position:-0 -123px;}
+.mingrenpic{background-image:url("../Images/icon.png");background-position:-0 -123px;}
+.zhichangpic{background-image:url("../Images/icon.png");background-position:-0 -123px;}
+.tongshipic{background-image:url("../Images/icon.png");background-position:-0 -123px;}
+.tongxuepic{background-image:url("../Images/icon.png");background-position:-0 -123px;}
+.tongxuepic{background-image:url("../Images/icon.png");background-position:-0 -123px;}
+.Llipic1{width:16px; height:16px; display: block; margin-top: 8px; float: left; margin-left: 20px;}
+.yingpic{background-image:url("../Images/littleico/1.jpg");background-size: 100% 100%;}
+.gamepic{background-image:url("../Images/littleico/2.jpg");background-size: 100% 100%;}
+.hotpic{background-image:url("../Images/littleico/3.jpg");background-size: 100% 100%;}
+.weipic{background-image:url("../Images/littleico/4.jpg");background-size: 100% 100%;}
+.mingpic{background-image:url("../Images/littleico/5.png");background-size: 100% 100%;}
+.chipic{background-image:url("../Images/littleico/5.jpg");background-size: 100% 100%;}
+.weivippic{background-image:url("../Images/littleico/6.png");background-size: 100% 100%;}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+
+.MBInR2myinfo{ width:230px; height: 200px; border-bottom: 1px solid #eee}
+.myinfoS{ width: 230px; height:110px;}
+.myinfoSL{ width:100px; height:110px; float: left;}
+.myinfoSR{ width: 130px; height:110px;float: left;}
+.myinfoSLheadpic{width: 80px; height: 80px; background-color: #fff; display: block; margin: 10px; background-image: url("../Images/headpic/2.gif"); background-size: 100% 100%;}
+.myinfoname{ width: 120px; height: 40px; font-size: 12px;padding-left: 10px; line-height: 40px; display: block; font-weight: bold; font-family: 微软雅黑;}
+.myinfoX{width:210px; height: 30px; padding-left: 10px; padding-top: 10px;}
+.myinfoXLi{width: 30px; height: 40px; display: block; float: left; cursor: pointer;}
+.myinfoXLis{ width: 30px; height: 20px; display: block;font-size: 20px; font-weight: bold;}
+.myinfoXLix{ width: 30px; height: 15px; display: block;font-size:12px; }
+.mainbodyInR2S{width: 230px;height: auto;min-height: 500px;border-left: 1px solid #eee;}
+.duishuo{ color: black;}
+/*.pinglunson3{ display: block;}*/
