@@ -1,0 +1,97 @@
+*{margin: 0px; padding: 0px;font-family:微软雅黑;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.top{width: 100%;height: 56px; background-color:#f60;}
+.logoarea{width:220px; height: 54px; padding-left: 20px; float: left;}
+.logo{width:160px; height: 54px;background-image: url("../Images/logo.png");background-position: 0px 10px; background-repeat: no-repeat; display: block; cursor: pointer;}
+.sosoarea{width:230px; height: 30px;padding-top:10px; float:left;}
+.soso{width:220px; height:30px; border-radius: 15px; background-color: #ddd; padding-left: 10px;}
+.sosoL{ width: 25px; height:25px;float: left; padding-top: 7px;}
+.sosoLin{width:17px; height:17px; background-image:url("../Images/soso1.png"); background-size: 100% 100%;}
+.sosoR{width: 150px; height:29px; float: left; border: none;outline: none; background-color: transparent; color: #fff;}
+.topR{width: 270px; height: 56px; float:right;background-image:url("../Images/1.png");  background-position: -199px -209px;}
+.topRL{width: 140px; height: 56px; float: left; padding-top: 15px;padding-left:60px; cursor: pointer;}
+.topRLspan{width:100px; height:25px;display: block;}
+.topRLa1{width: 45px; height: 25px; clear: #fff; float: left; display: block; font-size: 15px;color: #fff;line-height: 25px;text-align:right;padding-right: 5px;}
+.topRLa2{width: 50px; height: 25px; clear: #fff; float: left; display: block; font-size: 15px;color: rgb(255, 102, 0); line-height: 25px; text-align:left;}
+.topRR{width: 70px; height: 56px;float: left;background-image:url("../Images/1.png");  background-position: 0px -150px;  cursor: pointer;}
+
+.MB{width:1310px; height: 530px;padding-right:50px;}
+.MBM{width: 840px;height: 530px;float: left; padding-left: 40px;}
+.MBMin{width:820px; height:470px; background-color: #fff; overflow-x: auto;overflow-y: scroll;}
+.MBR{width: 200px; height: 530px; float: right;}
+.MBRlistop{ width:730px; height:35px; padding-left:70px; border-bottom: 1px solid #ccc; padding-top:5px;}
+.MBRlistopLi{width: 210px;display: inline-block; height: 35px; font-size: 12px; color: #aaa; line-height: 40px; float: left; display: block;}
+.musicLi{width:800px;height:auto; border-bottom: 1px solid #ddd;}
+.musicLi:hover{ background-color:#f5f5f5;}
+.musicLiP1{ width: 20px; height: 30px; padding-top: 10px; padding-left: 10px;float: left;}
+.musicLiP1In{width:18px; height: 17px; background-color: #eee; display: block;background-image:url("../Images/2.png");  background-position: 0px -709px; cursor: pointer; }
+.musicLiP2{ width:30px; height:30px;float: left;cursor: pointer; padding-left: 10px;padding-top: 10px;}
+.musicLiP2In{display: block;width:18px;height: 18px; font-size: 12px; color: #aaa;line-height: 18px; text-align: center;background-repeat: no-repeat;}
+.musicLiP2In:hover{background-image:url("../Images/2.png");  background-position: 0px -509px; color: transparent;}
+.musicname{width: 210px;height: 40px;float: left; font-size: 12px;line-height: 40px;}
+.singername{width: 210px;height: 40px; float: left; font-size: 12px;line-height: 40px; cursor: pointer;}
+.singername:hover{text-decoration: underline;}
+.zhuanjiname{width: 210px;height: 40px;float: left;font-size: 12px;line-height: 40px;cursor: pointer; }
+.zhuanjiname:hover{text-decoration: underline;}
+.musicinfo{width:800px;height:40px;}
+.findmore{width: 500px; height: 40px; padding-left: 70px; display: none;} 
+.findmoreIn{width: 80px; height: 30px; border-radius: 3px;background-image:url("../Images/3.png");cursor: pointer;  background-position: 0px -30px; background-repeat: no-repeat; color: #fff;font-size: 12px; line-height: 30px;padding-left: 40px;}
+.findmoreIn:hover{background-position: 0px -0px; background-repeat: no-repeat;}
+
+.bottom{width: 100%;height: 80px;background-color:#f60; position:fixed;}
+.crlArea{width:220px;height: 30px;margin-left: 40px; margin-top: 30px; float: left;}
+.lastsong{width: 30px; height: 25px; display: block;background-image:url("../Images/2.png");  background-position: -30px -95px;float: left; margin-top: 3px; margin-right: 20px; cursor: pointer;}
+.GoOrStop{width: 30px; height: 25px; display: block;background-image:url("../Images/2.png");  background-position: -34px -32px; float: left;cursor: pointer;}
+.nextsong{width: 30px; height: 25px;display: block;background-image:url("../Images/2.png");  background-position: -30px -66px;float: left; margin-top: 3px; margin-right: 20px; margin-left: 20px;cursor: pointer;}
+.xunhuan{width: 30px; height: 20px; display: block;background-image:url("../Images/2.png");  background-position: -30px -182px;float: left; margin-top: 3px; margin-right: 20px; margin-left: 20px;cursor: pointer;}
+.jingdu{width: 700px; height: 10px;float: left; margin-top: 20px; }
+
+.jingduline{ width: 600px; height: 2px; background-color:#aaa; opacity:0.6; position: relative; float:left; margin-top:7px; margin-left: 5px;}
+.jingdupoint{width: 8px; height:8px; border-radius: 100%; background-color: #fff; position: absolute; left:0px;top: -3px; cursor: pointer;}
+.curentsong{ width:200px; height: 25px;color: #fff;font-size: 14px;}
+.voicearea{width:300px;height:30px;float:right; padding-top: 30px;}
+.voicecrl{width:75px; height:30px;background-image:url("../Images/5.png"); background-position: -2px -0px;cursor: pointer; float:left;}
+.voice{ width:150px; height: 20px;float:left; padding-left: 20px; padding-top: 2px;}
+.voicepic{width: 20px; height: 20px;cursor: pointer;background-image:url("../Images/2.png");  background-position: -28px -295px; float: left;}
+.voiceline{width: 100px;height: 2px; background-color:#aaa; opacity:0.6; position: relative; float: left;margin-top: 8px; margin-left: 10px;}
+.voicepoint{width:8px; height: 8px; border-radius: 100%; background-color: #fff; position: absolute; left:50px;top: -3px; cursor: pointer; transition:all 0.2s;}
+.firstmore{display: block;}
+
+.MBL{width: 190px; height: 520px;float: left;padding-left: 10px; padding-top: 10px;}
+.MBLS{ width:190px;height: 120px; border-bottom: 1px solid #aaa;}
+.MBLSLi{width: 190px; height: 36px;display: block; border-radius: 3px;}
+.MBLSLi1{ background-color: #f0f0f0;}
+.MBLSLiL{ width: 26px;height: 26px;padding-top: 10px; padding-left: 10px; float: left;}
+.MBLSLiLIn{width: 20px; height: 19px;}
+.MBLSLiLIn1{background-image:url("../Images/2gif.gif"); display: block;background-repeat: no-repeat;}
+.MBLSLiLIn2{background-image:url("../Images/2.png"); background-position: 0px -376px; display: block;background-repeat: no-repeat;}
+.MBLSLiLIn3{background-image:url("../Images/2.png"); background-position: 0px -395px; display: block;background-repeat: no-repeat;}
+.MBLSLiR{width: 150px; height: 36px; font-size: 14px; font-size: 12px; line-height: 36px; float: left;}
+
+.MBLX{ width: 190px; height:200px; padding-top: 10px;}
+.jingxuan{width: 160px; height: 30px; font-size: 12px; color: #aaa; font-weight: bold; line-height: 30px; float: left; display: block;}
+.jia{ width:20px;height: 20px; float: right; margin-top: 5px;background-image:url("../Images/2.png"); background-position: -30px -413px;display: block; cursor: pointer;}
+.createjing{width: 190px; height:90px;display: block;background-image:url("../Images/6.png"); margin-top: 30px; background-repeat: no-repeat;}
+.Mbottom{width:800px; height: 60px; position: fixed;bottom: 80px; border-top: 1px solid #ccc;}
+.MbottomBtn{width:33px; height: 30px;margin-left: 10px;cursor: pointer; margin-top:15px; font-size: 12px; line-height: 30px; padding-left: 40px; float: left;}
+.MbottomP1{margin-top: 10px;}
+.btn1{background-image:url("../Images/7.png");}
+.btn1:hover{ background-position:0px -30px;}
+.btn2{background-image:url("../Images/7.png");background-position:-149px -0px;}
+.btn2:hover{ background-position:-149px -30px;}
+.btn3{background-image:url("../Images/7.png");background-position:-224px -0px; width: 80px;}
+.btn3:hover{ background-position:-224px -30px;} 
+.btn4{background-image:url("../Images/7.png");background-position:-347px -0px;}
+.btn4:hover{ background-position:-347px -30px;}
+
+.musicpic{width: 185px; height: 185px;float: right; background-image: url("../Images/musicpic/1.png");}
+.musicwords{width:200px; height: 300px;  margin-top:200px; background-color: #f0f0f0; overflow: hidden;}
+.musicwordsLi{width: 200px; height: 25px; font-size: 12px; line-height: 25px; text-align: center; display: block;}
+.currenttime{width:35px; height: 15px; float: left; font-size: 12px; color: #ccc; opacity: 0.8px;}
+.totletime{width:35px; height: 15px; float: left; font-size: 12px; color: #ccc; opacity: 0.8px; margin-left: 5px;}
+.firstline{margin-top:20px;}
+.musicwords{ position: relative;}
+.musicwordsUL{ height: auto; display: block; position:absolute;}
+
