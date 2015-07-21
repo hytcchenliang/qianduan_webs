@@ -1,0 +1,20 @@
+/*<!-- 顶端导航栏 -->*/
+body{font-size: 12px;font-family: Tahoma,Geneva,sans-serif;background-color: #dadad9;}
+.canvasdaohang{width: 100%;min-width: 1000px;height: 48px;}
+#canvasTop{background-color: #232323}
+#canvasMiddle{background-color: #333}
+#canvasBottom{background-color: #ddd;border-bottom: 1px solid #cbcbcb;}
+.canvasAll{width: 1000px;margin: 0 auto 0;height: 48px;}
+.canvasLogo{width: 192px;height: 16px; padding: 16px 0 16px 0;float: left;}
+.canToplogoleft{width: 100%;height: 20px;display: block;background: url("images/envato_marketplaces-e40d7704e9b725cd1e541878ccdb45b0.svg");background-repeat: no-repeat;background-size: 192px 16px}
+.canvasaccount{width: 600px;padding: 8px 0 0 0;height: 40px;float: right;}
+.canvasaccountbox{padding: 10px 0 0px 0;float: left;}
+.canvasaccounttext{line-height: 12px;height: 12px;color: #afabaa;padding: 0px 9px 0px 9px;text-align: center;}
+
+/*<!-- 底端导航栏 -->*/
+.canvasleft{width: 750px;height: 32px;padding: 8px 0 0 0;position: relative;}
+.cansub{height: 32px;float: left;display:inline-block;}
+.cansubTitle{display: inline-block;font-size: 12px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;color: #666;height: 12px;padding: 10px;border: 1px solid #ddd;border-top-left-radius: 0px;border-top-right-radius: 0px;}
+.cansubdowm{width: 210px;height: auto;background-color: #ffffff;display: none;box-shadow: 3px 3px 10px rgba(0,0,0,0.3);position: absolute;}
+.cansubdowmcon{height: 31px;width: 100%;}
+.cansubdowmmenu{display:block;font-size: 12px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;color: #666;height: 12px;padding: 10px;}

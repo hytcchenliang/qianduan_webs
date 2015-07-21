@@ -1,0 +1,10 @@
+*{margin: 0px;padding: 0px}
+img{border: 0px;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+.datetime{height:36px;width: 475px;border:1px solid #77698c;margin: 20px auto;box-shadow: 1px 1px 10px #a49bb1}
+.date{height: 36px;width: 250px;float: left;}
+.time{height: 36px;width: 200px;float: right;}
+.dic{height: 36px;width: 25px;float: left;background: url("images/newdig.png");display: block;}
+#heng{background-position: 0 -360px;}
+#mao{background-position: 0 -396px;}

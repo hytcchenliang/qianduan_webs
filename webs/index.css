@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0}
+a{text-decoration: none;}
+
+.myzp{font-size: 20px;margin: 10 auto;font-family: "微软雅黑";width: 200px;height: 30px;display: block;color: green; letter-spacing: 10px;}
+.Allwebs{width: 1000px;margin: 20px auto 0px;}
+.QQ{height: 200px;width: 200px; float: left;margin-left: 20px;margin-bottom: 30px;}
+.QQindex{height: 200px;width: 200px;display: block;float:left;}
+.webstext{height: 20px;width: 200px;text-align: center;float: left;}
+.QQtext{color: #000;font-size: 12px;display: block;}

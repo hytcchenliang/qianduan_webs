@@ -1,0 +1,148 @@
+*{margin: 0px;padding: 0px}
+ul,li{list-style: none;}
+img{border: 0px}
+a{text-decoration: none;}
+
+body{font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft Yahei', Helvetica, Arial, sans-serif;font-size: 12px;position: relative;}
+.blur{position: absolute;z-index: 0;top: 0px;left: 0px;}
+/*<!-- 顶部header -->*/
+.header{width: 100%;height: 56px;position: relative;}
+.headleft{width: 485px;height: 46px;padding-left: 30px;padding-top: 10px;float: left;}
+.headllogo{width:162px;height: 100%;background: url("images/T15QU5FXXmXXcUet2f-162-34.png");background-repeat: no-repeat;display: block;float: left;}
+.searchbar{width: 220px;height: 30px;border-radius: 24px;background: url("images/search.png");background-repeat: no-repeat;display:block;margin-left: 30px;float: left;margin-top: 3px;padding: 3px 0 0 10px;}
+.searchico{width: 30px;height: 30px;background: url("images/seachico.png");background-repeat: no-repeat;display: block;float: left;margin-top: 5px;}
+.seainput{width: 180px;height: 30px;background: rgba(0,0,0,0);display: block;float: left;border: 0px;outline: 0px;color: #fff}
+.headright{width: 269px;height: 56px;float: right;}
+.headrleft{width: 148px;height: 25px;padding: 16px 15px 15px 33px;background: url("images/common.png");background-repeat: repeat;background-position: -200px -210px;font-size: 14px;text-align: center;display:block;float: left;}
+.headrltxt{color: #fff;display: inline-block;}
+.login{color: #f60;display: inline-block;}
+.headrright{width: 73px;height: 56px;background: url("images/common.png");background-position: 0 -150px;background-repeat: no-repeat;display: block;float: left;}
+
+
+/*<!-- 中间内容 -->*/
+
+.con{width: 100%;height: 507px;overflow: hidden;background: #fff;position: relative;z-index: 5}
+/*中间左侧*/
+.conleft{width: 190px;height: 507px;padding: 0 10px;float: left;}
+.conltop{width: 190px;height: 108px;padding: 10px 0;border-bottom:1px solid rgb(204, 204, 204);}
+.conlul{width: 100%;height: 100%}
+.conlli{width: 160px;height: 36px;line-height: 36px;position: relative;padding: 0 0 0 30px}
+.conlico{width: 18px;height: 18px;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-repeat: no-repeat;display: inline-block;position: absolute;top: 8px;left: 8px;}
+.conlico1{background-position: 0 -358px;}
+.conlico2{background-position: 0 -376px;}
+.conlico3{background-position: 0 -394px;}
+.conltxt{font-size: 12px;color: #333;line-height: 20px;display: inline-block;padding-left: 5px;}
+.conllibox{background-color: #f0f0f0;border-radius: 4px;}
+.conlmiddle{width: 190px;height: 30px;padding-top: 10px;}
+.conlmtxt{width: 120px;line-height: 30px;color: rgb(170, 170, 170);font-weight: bold;display: block;float: left;}
+.conlmadd{width: 18px;height: 18px;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-position: 0px -412px;display: block;float: right;margin-top: 6px;}
+.conlbom{width: 185px;height: 89px;}
+
+/*中间*/
+.concenter{width:816px;height: 100%;float: left;padding-left: 30px;}
+.conctop{width: 100%;height: 36px;padding-top: 9px;border-bottom: 1px solid rgb(204, 204, 204);}
+.conctopbox{width: 634px;height: 36px;padding: 0 110px 0 72px;}
+.conctul{width: 100%;height: 100%}
+.conctli{width: 209px;height: 36px;float: left;}
+.conctlitxt{color: rgb(170, 170, 170);line-height: 36px;}
+.concmli{width: 100%;height: auto;min-height: 41px;border-bottom: 1px solid #EBEBEB}
+.concmitem{width: 100%;height: 82px;background-color: #F0F0F0; }
+.concmitop{width: 100%;height: 41px;}
+.concminortop{width: 100%;height: 41px;}
+.checkbox{width: 16px;height: 16px;padding: 12px 5px 12px 10px;float: left;}
+.concmitcheck{width: 16px;height: 16px;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-position: -1px -710px;display: inline-block;}
+.sortbox{width: 16px;height: 12px;padding: 12px 9px 12px 10px;float: left;}
+.sorticon{width: 12px;height: 12px;background: url("images/icon2.png");background-repeat: no-repeat;display: inline-block;}
+.concmitbody{width: 634px;height: 41px;float: left;}
+.concsongname{width: 209px;height: 41px;float: left;}
+.concauther{width: 209px;height: 41px;float: left;}
+.conczj{width: 209px;height: 41px;float: left;}
+.concmittxt{line-height: 41px;color: #333;}
+.concmitright{width: 110px;height: 10px;float: left;padding-top: 11px;}
+.concmitrico{width: 18px;height: 18px;margin-right: 10px;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-repeat: no-repeat;display: inline-block;}
+.concmitrico1{background-position: 0px -155px;}
+.concmitrico2{background-position: 0px -473px;}
+.concmitrico3{background-position: 0px -491px}
+.concmibom{width:740px;padding-left: 72px;height: 41px;}
+.concmibmy{width: 78px;height: 30px;background: url("images/icon1.png");background-repeat: no-repeat;display: inline-block;color:#fff;line-height: 30px;padding-left: 40px; }
+.sortboxnor{height: 18px;padding:12px 3px 12px 10px;width: 18px;font-style: normal; }
+.sorttxt{line-height: 18px;color: rgb(170, 170, 170)}
+.concmitriconone{display: none;}
+
+
+.concbom{width: 816px;height: 45px;padding-top: 14px;border-top: 1px solid rgb(204, 204, 204)}
+.concbdel{width: 73px;height: 30px;margin-right: 10px;border-radius: 4px;float: left;padding-top: 5px;}
+.concbsc{width: 73px;height: 30px;margin-right: 10px;border-radius: 4px;float: left;padding-top: 5px;}
+.concbmore{width: 73px;height: 30px;margin-right: 10px;border-radius: 4px;float: left;padding-top: 5px;}
+.concbadd{width: 120px;height: 30px;margin-right: 10px;border-radius: 4px;float: left;padding-top: 5px;}
+.concbicon{width: 33px;height: 30px;background: url("images/T1Z8x_FEBXXXcvwvwe-420-106.png");background-repeat: no-repeat;display: inline-block;color: #333;line-height: 30px;padding-left: 40px;}
+.concbdelicon{background-position: 0 0;}
+.concbscicon{background-position: -150px -30px;}
+.concbaddicon{background-position: -225px -30px;}
+.concbmoreicon{background-position: -348px -30px;}
+.concbiconeps{width: 80px;}
+.sortbofang{width: 18px;height: 18px;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-position: 0 -509px;display: inline-block;}
+.concminortop1{display: none;}
+.concmitem2{display: none;}
+.concmitem3{display: none;}
+
+
+/*中间右侧*/
+.conright{width: 250px;height:507px;float: right;padding-right: 20px;}
+.conrtop{width: 250px;height: 188px;padding-top: 30px;background: #fff;float: left;}
+.conrtpic{width: 185px;height: 185px;padding-left: 32px}
+.conrbom{width: 250px;height: 270px;float: right;}
+.conrbul{width: 242px;height: 100%;float: left;position: relative;z-index: -5;}
+.conrbsroll{width:8px;height: 100%;background-color: #fff;position: relative;float: left; }
+.conrbsgl{width: 8px;height: 73px;border-radius: 4px;background-color: #ccc;opacity: 0.5;position: absolute;top: 0px;left: 0px;}
+.ui-lrc-line{width: 210px;height: 22px;padding: 3px 10px;text-align: center;color: rgb(51, 51, 51);}
+.newcolor{color: rgb(255, 102, 0); }
+
+/*<!-- 底部 -->*/
+.footer{width: 100%;height: 80px;position: relative;z-index: 5;}
+.footleft{width: 278px;height: 80px;float: left;}
+.footcenter{width: 758px;height: 80px;float: left;}
+.footerright{width:270px;height: 80px;float: right;}
+.footlul{width: 210px;height: 80px;padding: 0 30;}
+.footlli{width: 30px;height: 30px;padding-right: 30px;float: left;padding-top: 25px;}
+.footllilast{padding-right: 0px;width: 20px;height: 18px;padding-top: 30px;}
+.musicico{width: 30px;height: 30px;display: inline-block;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-repeat: no-repeat;vertical-align: middle;cursor: pointer;}
+.prevmusic{background-position: 0 -90px;}
+.MainControl{background-position: 0 0px;}
+.StopControl{background-position: 0 -30px;}
+.nextmusic{background-position: 0 -60px;}
+.musicicospc{width: 20px;height: 18px;display: inline-block;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-repeat: no-repeat;}
+.circlemusic{background-position: 0 -181px;}
+
+.footcbox{height: 38px;padding-top: 20px;width: 100%}
+.footctop{width:100%;height: 18px; }
+.SongName{width: 600px;float: left;}
+.footctico{width: 100px;float: right;height: 18px;}
+.footctli{width: 18px;height: 18px;float: right; padding-right: 20px;}
+.footctlifirst{padding-right: 0px;}
+.songnamelink{font-size: 14px;line-height: 18px;color: #fff}
+.icoall{width: 18px;height: 18px;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-repeat: no-repeat;display: inline-block;}
+.icomore{background-position:  0px -277px;}
+.icoshare{background-position: 0px -259px;}
+.icofav{background-position:  0px -241px;}
+.footcbom{width: 100%;height: 20px;padding-top: 5px;}
+.SongTime{height: 18px;width: 40px;display: block;float: left;color: #965852;background-color: rgba(0, 0, 0, 0);}
+.Processall{width: 664px;padding: 0 5px;height: 2px;line-height: 18px;float: left;padding-top: 8px;}
+.Process{background: url("images/index.png");width: 100%;height: 2px;background-repeat: repeat-x;display: inline-block;float: left;cursor: pointer;}
+.SongallTime{height: 18px;width: 40px;display: block;float: right;color: #965852;background-color: rgba(0, 0, 0, 0);}
+.Songid{display: none;}
+
+
+.ProcessControl{width: 0px;height: 2px;background-color: #fff;position: relative;}
+.ProcessCico{background-image: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");position: absolute;background-position: -32px -338px;width: 18px;height: 18px;display: inline-block;left:0px;background-repeat: no-repeat;top: -8px; }
+.footerrleft{width: 80px;height: 32px;padding: 24px 0 24px 0;float: left;}
+.footerrlpic{width: 80px;height: 32px;display: inline-block;background: url("images/T1ldFHFpxtXXaLghZR-80-832.png");background-position: 0 0;}
+.footerrright{width: 110px;height: 18px;float: left;margin-left: 40px;padding: 30px 0 30px 0;}
+.footrvoice{width: 18px;height: 18px;display: inline-block;background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");background-position: 0 -295px;float: left;}
+.voiceprocessall{width: 80px;padding: 0 5px;height: 2px;line-height: 18px;float: left;padding-top: 8px;}
+.voiceprocess{background: url("images/index.png");width: 80px;height: 2px;background-repeat: repeat-x;display: inline-block;float: left;cursor: pointer;}
+.voicecontrol{width: 10px;height: 2px;background-color: #fff;position: relative;}
+.voiceCico{background-image: url("images/T1bMh.FxNXXXb_r3IF-72-730.png");position: absolute;background-position: -32px -338px;width: 18px;height: 18px;display: inline-block;left:10px;background-repeat: no-repeat;top: -8px;}
+
+.conrbul2{display: none;}
+.conrbul3{display: none;}

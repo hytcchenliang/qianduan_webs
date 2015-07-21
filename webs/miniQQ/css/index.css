@@ -1,0 +1,221 @@
+*{margin: 0px;padding: 0px;}
+img{border: 0px}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+body{font-size: 16px;font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif;background-image: url("images/2.jpg");position: relative;background-size: 1400px 700px;}
+
+.allcontent{margin: 5px 0 0 100px;width: 280px;height: 100%;}
+.accountInfo{width: 260px;height: 70px;padding: 0px 0 0 20px;}
+/*<!-- 个人信息 -->*/
+.personInfo{width: 260px;height: 50px}
+.psheadpic{width: 46px;height: 46px;border:1px solid #fff;display: block;float: left;}
+.psheadpiccon{width: 46px;height: 46px;}
+.perul{width:190px;height: 46px;float: left;padding-left: 15px}
+.perul li{width: 100%;height: 23px;}
+.pertxt1{font-size: 16px;line-height: 22px;text-shadow: 0 0 3px snow,0 0 3px snow,0 0 3px snow,0 0 3px snow;color: #000;}
+.pertxt2{line-height: 22px;text-shadow: 0 0 3px snow,0 0 3px snow,0 0 3px snow,0 0 3px snow;color: #000;font-size: 12px;}
+
+/*<!-- 菜单 -->*/
+.iconlist{width: 260px;height: 15px;padding: 0px 0 0 0;}
+.iconlist a{height: 15px;width: 15px;padding-right: 3px;}
+.icon1{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;}
+.icon2{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -20px 0;}
+.icon3{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -40px 0;}
+.icon4{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -60px 0;}
+.icon5{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -81px 0;}
+.icon6{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -103px 0;}
+.icon7{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -124px 0;}
+.icon8{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -144px 0;}
+.icon9{background: url("images/icons_list.png");width: 15px;height: 15px;display: inline-block;background-position: -166px 0;}
+
+
+.mainpanel{width: 278px;height: 480px;border-radius: 10px;box-shadow: 2px 2px 6px rgba(0,0,0,.7);;float: left;border: 1px solid #555;}
+.mainpaneltop{width: 230px;height: 19px;background-image: linear-gradient(#555,#222);padding: 13px 30px 13px 20px;border-top-left-radius: 7px; border-top-right-radius: 7px;}
+.mainptoptilte{line-height: 19px;color: #fff;text-align: center;display: block;font-size: 18px}
+.mainptopsetilte{width: 180px;display: block;float: left;}
+.mainptopsearch{width: 25px;height: 19px;padding: 6px 10px 6px 10px;border: 1px solid #2c2727;background: url("images/title_search_icon.png");display: none;float: right;background-repeat: no-repeat;background-size: 14px 14px;;text-align: center;background-position: 13px 10px;margin-top: -8px;border-radius: 3px;}
+
+
+.mainpanelmiddle{width: 280px;height: 385px;overflow: scroll;background-color: #fff;scrollbar-base-color:#7B7B7B;}
+.chatting{width: 260px;height: 480px;}
+.friendInfo{width: 251px;height: 56px;padding: 2px 0 2px 10px;border-top: 1px solid #e3e3e3;border-left: 1px solid #ccc;border-right: 1px solid #ccc;background: rgb(245, 245, 245);}
+.friendheadimg{display: block;width: 40px;height: 40px;float: left;margin: 10px 10px 6px 0;}
+.friendheadimg1{background-image: url("images/headimg1.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+.friendheadimg2{background-image: url("images/headimg2.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+.friendheadimg3{background-image: url("images/headimg3.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+.friendheadimg4{background-image: url("images/headimg4.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+.friendheadimg5{background-image: url("images/headimg5.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+.friendheadimg6{background-image: url("images/headimg6.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+.friendheadimg7{background-image: url("images/headimg7.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+.friendheadimg8{background-image: url("images/headimg8.jpg");background-size: 40px 40px;background-repeat:no-repeat;}
+
+.frienditem{float: left;height: 56px;width: 190px;}
+.nickname{line-height: 22px;height: 22px;padding: 6px 5px 0 5px;color: #000;display: block; }
+.msgtext{padding: 0 0 0 5px;line-height: 28px;font-size: 12px;color: #B6B6B6;display: block;}
+.mainpanelbottom{width: 280px;height: 50px;background-image: linear-gradient(#555,#222);border-bottom-left-radius: 7px;border-bottom-right-radius: 7px;}
+.mainpanelbottom ul{width: 100%;height: 100%}
+.mainpanelbottomline{width: 68.5px;height: 100%;float: left;text-align: center;}
+.mainpanelbottomline a{margin: 0 auto;}
+.mainpanelbottomlineclick{background: #333;}
+.mainpanelbottomline1{border-right: 1px solid #222;}
+.mainpanelbottomline2{border-left: 1px solid #555;border-right: 1px solid #222;}
+.mainpanelbottomline3{border-left: 1px solid #555;border-right: 1px solid #222;}
+.mainpanelbottomline4{border-left: 1px solid #555;}
+.mainpanelbottomicon{width: 34px;height: 34px;margin: 0 auto;}
+
+.mainpanelbottomicon01{background: url("images/tab_icon_conversation.png");background-size: 34px 34px;}
+.mainpanelbottomicon02{background: url("images/tab_icon_contact.png");background-size: 34px 34px;}
+.mainpanelbottomicon03{background: url("images/tab_icon_plugin.png");background-size: 34px 34px;}
+.mainpanelbottomicon04{background: url("images/tab_icon_setup.png");background-size: 34px 34px;}
+.mainpanelbottomtext{font-size: 12px;color: #fff;display:block;}
+
+
+/*<!-- 联系人 -->*/
+.contact{width: 262px;display: none;height: auto;min-height: 365px;background: #fff;}
+.containtop{width: 262px;height: 36px;}
+.normal{width: 62.5px;height: 15px;padding: 10px 12px 10px 12px;box-shadow: 10px 0 0 -9px #ccc;float: left;text-align: center;line-height: 15px;cursor: pointer;}
+.normal2{box-shadow: 0 0 0 0;}
+.normal{border-bottom: 2px solid #ccc;}
+.active{border-bottom:2px solid #0aa7ff;color: #0aa7ff;}
+.containbottom{width: 260px;height: 366px;}
+.conbotline{width: 260px;height: 38px;}
+.conbotline{border-bottom: 1px solid #e3e3e3}
+.conaccount{float: right;display: inline-block;font-size: 12px;color: gray;}
+.containline{width: 204px;height: 16px;padding: 10px 28px 12px 28px;background-image: url("images/open_arrow.png");display: inline-block;background-repeat: no-repeat;background-size: 14px 14px;background-position:12px 15px; }
+.haoyouul{display: none;}
+.friendul{display: none;}
+.stuendul{display: none;}
+/*群*/
+.groupbox{width: 260px;height:366px; display: none;}
+.groupimg1{background-image: url("images/getface.jpg");}
+.groupname{height: 23px;line-height: 23px;overflow: hidden;display: block;width: 180px;padding: 6px 5px 0 5px; float: left;}
+.taolunbot{width: 260px;height: 366px;display: none;}
+
+
+
+/*<!-- 发现 -->*/
+.find{width: 262px;background-color: #D3D6DB;display: none;height: auto;min-height: 93px;}
+.find li{width: 84.7px;height: 91px;border: 1px solid #eceef2;float: left;border-bottom-color: #c1c7d2;border-right-color: #c1c7d2;cursor: pointer;}
+.findicon1{background-image: url("images/plugin_icon_qzone.jpg");width: 100%;height: 100%;display: block;background-repeat: no-repeat;width: 60px;height: 60px;background-size: 90%;margin:10px auto 0;}
+.find li a{width: 100%;height: 19px;line-height: 19px;font-size: 13px;text-align: center;;display: block;color: #000;}
+.findicon2{background-image: url("images/plugin_icon_qmail.jpg");width: 100%;height: 100%;display: block;background-repeat: no-repeat;width: 60px;height: 60px;background-size: 90%;margin:10px auto 0;}
+.findicon3{background-image: url("images/plugin_icon_qq_portal.png");width: 100%;height: 100%;display: block;background-repeat: no-repeat;width: 60px;height: 60px;background-size: 90%;margin:10px auto 0;}
+
+
+
+/*<!-- 设置 -->*/
+.setting{width: 245px;height:auto;padding: 10px 9px 10px 9px;background-color: #fff;display: none;min-height: 365px;overflow: auto;}
+.setting li{width: 245px;}
+.setting1{height: 80px;margin-bottom: 10px;border: 1px solid #afc8e2;border-radius: 5px;}
+.setting2{height: 66px;margin: 20px 0 20px 0;border: 1px solid #afc8e2;border-radius: 5px;}
+.setting3{height: 38px;margin: 20px 0 20px 0;border: 1px solid #afc8e2;border-radius: 5px;}
+.set1{width: 238px;height: 58px;padding: 10px;}
+.setheadpic{width: 40px;height: 40px;margin: 8px;float: left;}
+.set1info{width: 150px;float: left;}
+.set1nickname{height: 30px; line-height: 30px;font-size: 1.4em;color: #000;display: block;}
+.set1num{height: 10px;line-height: 10px;font-size: 13px;color: #7F7F7F;display: block;padding-top: 8px;}
+.set1state{width: 22px;height: 20px;margin: 30px 0 0 0;float: left;position: relative;}
+.set1default{background-image: url("images/state_sprite.gif"); width: 10px;height: 10px;display: block;float: left;background-repeat: no-repeat;background-position: 0 0;}
+.set1dropdowm{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: block;float: left;background-repeat: no-repeat;background-position: -162px 4px;}
+.set2Info{width: 238px;height: 44px;padding: 10px;}
+.set2sign{color: #666;font-size: 16px;}
+.set2signcon{color: #000;font-size: 16px;}
+.set3Info{width: 225px;height: 16px;padding: 10px 10px 10px 10px;}
+.mescon{color: #000;font-size: 16px;}
+.setmes{background-image: url("images/open_arrow.png");width: 20px;height: 20px;margin: 0 0 0 10px;float: right;display: block;}
+.setquit{background-color: #E23624;height: 38px;line-height: 38px;font-size: 16px;color: #fff;display: block;width: 100%;height: 100%;border-radius: 5px;text-align: center;}
+.stateul{display:none;width: 70px;height: 140px;border: 1px solid #000;background-color: #fff;position: absolute;top:20px;left: -50px;}
+.stateul li{width: 64px;height: 12px;padding: 4px 3px 4px 3px;cursor: pointer;}
+.state1{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: inline-block;float: left;}
+.stateul li span{font-size: 12px;display: inline-block;vertical-align: baseline;float: left;height: 15px;line-height: 12px;margin-left: 2px}
+.state2{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: inline-block;background-position: -72px 0;float: left;}
+.state3{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: inline-block;background-position: -18px 0;float: left;}
+.state4{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: inline-block;background-position: -36px 0;float: left;}
+.state5{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: inline-block;background-position: -108px 0;float: left;}
+.state6{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: inline-block;background-position: -54px 0;float: left;}
+.state7{background-image: url("images/state_sprite.gif");width: 10px;height: 10px;display: inline-block;background-position: -90px 0;float: left;}
+
+
+/*aboutQQ*/
+.aboutQQ{height: 112px;display: none;}
+.aboutQQtxt{width: 226px;height: 16px;padding: 10px;border-bottom: 1px solid #afc8e2;}
+.aboutQQrow{width: 228px;height: 16px;padding: 10px;}
+.aboutQQconspe{color:#A1A1A1 }
+
+/*<!-- 消息相关设置 -->*/
+.messageset{width: 700px;height: 480px;position: absolute;top:70px;left: 450px;display: none;}
+#messtop{width: 698px;height: 43px;border: 1px solid #555;background:linear-gradient(#555,#222);border-top-left-radius: 10px;border-top-right-radius: 10px; }
+#messbottom{width: 700px;height: 435px;background-color: #EDEDED;}
+#messtshezhi{width: 57px;height: 19px;padding: 6px 10px;margin: 5px 0 7px 25px;border: 1px solid #000!important;text-align: center;border-color: #2c2727 #2c2727 #1a1919;background: -webkit-linear-gradient(top,#555,#222);border-radius: 5px;box-shadow: inset 1px 0 rgba(255,255,255,.1),0 1px rgba(255,255,255,.1);float: left;cursor: pointer;}
+#messtshezhi span{color: #fff;font-size: 14px;}
+#messttxt{width: 590px;height: 43px;line-height: 43px;font-size: 18px;text-align: center;display: block;float: left;color: #fff;}
+.messbgroup{width: 680px;height: auto;padding: 10px;}
+.messbrow{width: 658px;height: 24px;padding: 10px;border: 1px solid #AFC8E2;background: #fff;}
+.messbrow1{border-bottom: 0px;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.messbrow2{border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
+.messbrow3{border-radius: 5px;}
+.row{width: 658px;height: 40px;padding: 10px;border: 1px solid #AFC8E2;border-radius: 5px;background: #fff;}
+.messbrow span{color: #666;display: block;float: left;}
+.messbbtn{border-radius: 6em;display: block;float: right; width: 56px;height: 24px;position: relative;cursor: pointer;}
+.messbbtn1{background-image:linear-gradient(#5393c5,#6facd5);}
+.messbbtn2{background-image: linear-gradient(#d0d0d0,#dfdfdf);}
+.rowtop{height: 24px;width: 100%;color: #666;}
+.rowbot{height: 24px;width: 100%;color: #666;}
+.messbcir{background-image: linear-gradient(#fff,#f1f1f1);width: 1.4em;height: 1.4em;border-radius: 1.6em;position: absolute;margin: 1px}
+.messbcirright{left: 1.9em;}
+
+/*聊天框*/
+.talkbox{width: 700px;height: 500px;border-radius: 10px;border: 1px solid #555;position: absolute;top: 50px;left: 400px}
+.talk{width: 700px;height: 500px;}
+.talkboxtop{width: 670px;height: 40px;background-image:linear-gradient(#555,#222); padding: 5px 15px 0 15px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+.talkboxmiddle{width: 700px;height: 405px;background: rgba(0,0,0,.5);overflow: auto;}
+.talkboxbottom{width: 700px;height: 50px;background-image:linear-gradient(#555,#222);border-bottom-left-radius: 7px;border-bottom-right-radius: 7px; }
+
+.talktopdropdowm{width: 42px;height: 19px;padding: 6px 10px 6px 10px;margin: 0px 0 7px 0px;border: 1px solid #2c2727;border-radius: 5px;float: left;}
+.talktopdropdowmpic{background: url("images/pannel-arrow-down.png");background-repeat: no-repeat;display: block;width: 42px;height: 19px;}
+.talktopnickname{width: 465px;height: 18px;padding: 8px 0px 0px 8px;float:left;text-align: center;}
+.talktopnntxt{line-height: 18px;font-size: 18px;color: #fff; }
+.talktopmin{width: 42px;height: 19px;padding: 6px 10px 6px 10px;border: 1px solid #2c2727;border-radius: 5px;float: left;text-align: center;cursor: pointer;}
+.talktopclose{width: 42px;height: 19px;padding: 6px 10px 6px 10px;margin: 0px 0 7px 5px;border: 1px solid #2c2727;border-radius: 5px;float: right;text-align: center;cursor: pointer;}
+.talktopclosetxt{line-height: 16px;font-size: 14px;color: #fff;}
+.talkbottombq{width: 30px;height: 30px;padding: 10px 10px 10px 20px; float: left;}
+.talkboxbpic{background: url("images/TalkBottom01.png");background-repeat: no-repeat;display: block;width: 30px;height: 30px;background-size: 30px 30px;}
+.talkboxbtxtbox{height: 35px;padding-top: 8px;padding-left: 15px;width: 500px;}
+#textarea{width: 100%;height: 35px;border: 1px solid #555;border-radius: 5px;line-height: 35px;font-size: 16px;font-family: 微软雅黑;}
+.talkboxbsend{width: 50px;height: 33px;float: left;background-color: #4175A6;border-radius: 5px;text-align: center;margin:8px 5px 0 0;cursor: pointer;margin-left: 30px;}
+.sendtext{color: #fff;font-size: 14px;line-height: 35px;}
+.talkboxfaceimg{width: 700px;height: 312px;display: none;}
+.faceimgtop{width: 700px;height: 287px;background-image:url("images/qqimage_01.jpg");background-size: 700px 287px;}
+.btnfwarp{width: 410px;height: 25px;padding: 5px 0 0 290px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;background: rgba(34,34,34,.7);}
+.btnfwarpnor{width: 10px;height: 10px;margin: 5px 10px 0 0;float: left;padding: 2px;background: gray;border-radius: 10px;}
+.btnfselected{background: #000;}
+.faceimg1{width:auto;height: 100%}
+.faceItem{width: 100%;height: 100%;display: block;float: left;}
+.faceItem2{display: none;}
+.faceItem i{width: 99px;height: 93px;float: left;display: block;}
+/*聊天框中间内容*/
+.talktime{width: 680px;height: 17px;text-align: center;}
+#chattime{width: 35px;height: 13px;padding: 2px 8px 2px 8px;text-align: center;color: rgba(255,255,255,.8);background:rgba(0,0,0,.3);font-size: 13px;border-radius: 8px;display: inline-block;line-height: 13px}
+.talkcontent{width: 680px;height: auto;padding: 0px 10px 0 10px;min-height: 110px;}
+.talkclicon{display: block;width: 40px;height: 40px;margin-left: 10px;float: right;background-image: "";}
+.talkcleft{display: block;float: right;width: 340px;height: auto;padding: 0 0 0 270px}
+.talkclname{height: 14px;width: 340px;text-align: right;font-size: 14px;margin-bottom: 10px;display: block;text-shadow: 1px 1px 1px #fff;}
+.talkcltxt{width: 320px;height: auto;padding: 10px 10px 10px 10px;text-align: left;display: inline-block;border-radius: 5px;box-shadow: 1px 1px 5px #000;line-height: 1.4;background:linear-gradient(#fff,#e1e1e1);min-height: 22px;max-height:380px; }
+
+/*<!-- 更换背景图 -->*/
+.changebg{width: 55px;height: 22px;margin: 20px 0 0 0px;position: absolute;top: 550px;left: 210px;}
+.changepre{width: 19px;height: 19px;float: left;background-image: url("images/arrow.png");background-position: -2px -2px;background-repeat: no-repeat;}
+.changenext{width: 19px;height: 19px;float: right;background-image: url("images/arrow.png");background-position: -25px -2px; background-repeat: no-repeat;}
+/*<!-- 最小化 -->*/
+.chatmin{width: 1000px;height: 40px;margin: 20px auto;position: absolute;top: 570px;left: 150px;}
+.chatminpic{display: block;float: left;margin: 10px;width: 40px;height: 40px;border: 1px solid #fff;border-radius: 3px;}
+.chatminid{display: none;}
+.talltopfriendid{display: none;}
+
+/*<!-- 搜索好友 -->*/
+.searchfriends{display: none;}
+.seafbottom{background-color: #B9B9B9;width: 700px;height: 435px;}
+.seafbox{width: 688px;height: 34px;padding: 10px 6px;border-top: 1px solid #696969;border-bottom: 1px solid #a2a2a2;background: -webkit-linear-gradient(top,#ededed,#d6d6d6); }
+.seafboxcon{width: 634px;height: 27;padding: 5px 32px 0 20px;border: 1px solid #d0d0d0;border-radius: 18px;background: #fff;box-shadow:  0 1px #ececec,inset 0 1px #a7a8a8,inset 1px 0 #a7a8a8,inset -1px 0 #a7a8a8;margin: 0 auto}
+.seafinput{width: 634px;height: 21px;padding: 1px 0;margin: 2px 0 0 0;border: 0px;font-size: 16px;font-weight:bold;}
