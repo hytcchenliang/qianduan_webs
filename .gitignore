@@ -8,7 +8,7 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-abc/
+1.txt
 
 # Windows Installer files
 *.cab
